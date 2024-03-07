@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         sans: ["Satoshi-Variable", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'hero-1': "url('/assets/homepagephoto.jpg')",
+      }
     },
   },
   plugins: [
