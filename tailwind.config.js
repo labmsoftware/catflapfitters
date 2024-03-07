@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./templates/**/*.{twig, html}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Satoshi-Variable", ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
