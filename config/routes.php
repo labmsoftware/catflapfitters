@@ -17,7 +17,7 @@ return function(App $app) {
     $app->get('/', ViewHomeAction::class);
     $app->get('/quote', ViewQuoteAction::class);
     $app->post('/sendquote', SendQuoteAction::class);
-    $app->get('/FAQ', ViewFaqAction::class);
+    $app->get('/faq', ViewFaqAction::class);
     $app->get('/products', ViewProductsAction::class);
     $app->get('/reviews', ViewReviewsAction::class);
     $app->get('/gallery', ViewGalleryAction::class);

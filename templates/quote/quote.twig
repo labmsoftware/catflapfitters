@@ -3,15 +3,16 @@
 {% block content %}
 
 <div
-    class="min-h-content">
+    class="flex flex-col justify-start align-middle items-start space-y-2 w-full  h-max p-4 xl:max-w-7xl">
 
-    <div class="mx-4 text-center bg-white rounded-t-md space-y-2 lg:w-4/5">
-        <div class=" rounded-t-md py-2  border-b-2 border-slate-300 mt-2 ">
+    <div class="flex flex-col justify-end align-middle items-start w-full px-3 
+                rounded-md shadow-sm 0">
+        <div class=" rounded-t-md py-2 mt-2 border-b-2 border-slate-200 ">
             <h1 class="text-2xl">Get A Quote</h1>
             <h3 class="text-sm">If you'd like us to get in contact for a Free quote, enter your details below</h3>
         </div>
 
-        <div class="px-2 pb-2 ">
+        <div class="px-2 pb-2 bg-white rounded-md">
            <form action="/sendquote" method="POST">
         <label for="name" class="text-black">Name</label>
         <input type="text" id="name" name="contactname" placeholder="Name" required
