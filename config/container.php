@@ -10,6 +10,8 @@ use Slim\Factory\AppFactory;
 use Doctrine\ORM\EntityManager;
 use Doctrine\DBAL\DriverManager;
 use Odan\Session\SessionInterface;
+use App\Http\Renderer\TwigRenderer;
+use App\Handler\DefaultErrorHandler;
 use Monolog\Formatter\LineFormatter;
 use Slim\Middleware\ErrorMiddleware;
 use Nyholm\Psr7\Factory\Psr17Factory;
@@ -21,7 +23,6 @@ use Slim\Interfaces\RouteParserInterface;
 use Selective\BasePath\BasePathMiddleware;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ServerRequestFactoryInterface;
-use App\Handler\DefaultErrorHandler;
 
 return [
     
@@ -109,6 +110,15 @@ return [
 
         return $twig;
 
+    },
+
+    TwigRenderer::class => function(ContainerInterface $container) {
+        $settings = ($container->get(Settings::class))->get('twig');
+
+        return new TwigRenderer(
+            $container->get(Twig::class),
+            $settings['partials']
+        );
     },
 
     SessionManagerInterface::class => function (ContainerInterface $container) {

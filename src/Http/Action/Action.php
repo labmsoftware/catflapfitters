@@ -1,18 +1,20 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace App\Http\Action;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * Action class to be extended
+ */
 abstract class Action
 {
-    protected array $args;
-    
+    /**
+     * Does nothing here
+     */
     public function __construct(
-        
+
     ) {
         
     }

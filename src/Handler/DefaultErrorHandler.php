@@ -109,7 +109,7 @@ final class DefaultErrorHandler
         $phpRendererAttributes['exceptionMessage'] = $exceptionMessage;
 
         // Render template
-        return $this->twig->render($response, 'error/error-page.twig', $phpRendererAttributes);
+        return $this->twig->render($response, 'error.twig', $phpRendererAttributes);
     }
 
     /**

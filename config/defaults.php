@@ -41,7 +41,8 @@ $settings['twig'] = [
     'debug' => $_ENV['APP_DEBUG'] ?? true,
     'cache' => __DIR__ . '/../var/cache/twig',
     'auto_reload' => true,
-    'templates' => __DIR__ . '/../templates'
+    'templates' => __DIR__ . '/../templates',
+    'partials' => []
 ];
 
 $settings['public'] = [
