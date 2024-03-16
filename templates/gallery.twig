@@ -1,0 +1,13 @@
+{% extends "/layout/default.twig" %}
+
+{% block content %}
+
+{% for image in images %}
+    <div
+        class="w-full p-4">
+
+        <img src="/assets/{{ image }}.jpg" class="w-full shadow-sm">
+    </div>
+{% endfor %}
+
+{% endblock %}
