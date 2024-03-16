@@ -4,6 +4,8 @@ use Slim\App;
 use Slim\Routing\RouteCollectorProxy;
 use App\Http\Action\View\ViewFaqsAction;
 use App\Http\Action\View\ViewHomeAction;
+use App\Http\Action\View\ViewAboutAction;
+use App\Http\Action\View\ViewContactAction;
 use App\Http\Action\View\ViewGalleryAction;
 use App\Http\Action\View\ViewProductsAction;
 
@@ -16,5 +18,7 @@ return function(App $app) {
         $views->get('/products', ViewProductsAction::class);
         $views->get('/faqs', ViewFaqsAction::class);
         $views->get('/gallery', ViewGalleryAction::class);
+        $views->get('/about', ViewAboutAction::class);
+        $views->get('/contact', ViewContactAction::class);
     });
 };
