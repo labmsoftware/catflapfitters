@@ -2,6 +2,7 @@
 
 use Slim\App;
 use Slim\Routing\RouteCollectorProxy;
+use App\Http\Action\View\ViewFaqsAction;
 use App\Http\Action\View\ViewHomeAction;
 use App\Http\Action\View\ViewProductsAction;
 
@@ -12,5 +13,6 @@ return function(App $app) {
     $app->group('', function(RouteCollectorProxy $views) {
         $views->get('/', ViewHomeAction::class);
         $views->get('/products', ViewProductsAction::class);
+        $views->get('/faqs', ViewFaqsAction::class);
     });
 };
