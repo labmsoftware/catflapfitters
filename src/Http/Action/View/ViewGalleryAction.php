@@ -19,20 +19,20 @@ final class ViewGalleryAction extends Action
     {
         $data = [
             'images' => [
-                'Brown-in-glass',
-                'Brown',
-                'Clear-dog',
                 'Clear-man',
                 'White-on-grey-microchip',
-                '2024-01-05-1',
                 '2024-01-05-2',
                 '2024-01-05-3',
-                '2024-01-05-4',
                 '2024-01-05-5',
                 '2024-01-05-6',
-                '2024-01-05-7',
+                '2024-01-05-4',
                 '2024-01-05-8',
-                '2024-01-05-9'
+                '2024-01-05-9',
+                'Brown',
+                'Clear-down',
+                '2024-01-05-1',
+                'Brown-in-glass',
+                '2024-01-05-7'
             ]
         ];
 
