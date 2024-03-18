@@ -9,7 +9,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-1': "url('/assets/homepagephoto.jpg')",
-        'hero-2': "url('/assets/catinfrontofflap.jpg')"
+        'hero-2': "url('/assets/Homepagelogo.jpg')"
       }
     },
   },
