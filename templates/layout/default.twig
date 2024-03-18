@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="LABMSOFTWARE">
 
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css?newcache01">
 
     <title>{{ page.title }}</title>
 </head>
@@ -133,9 +133,12 @@
     </nav>
     
     <div
-        class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2 h-fit">
+        class="flex flex-col justify-center align-middle items-center w-full h-full">
     
-        {% block content %}{% endblock %}
+        <div
+            class="flex flex-col justify-center align-middle items-center md:w-1/2 h-fit">
+            {% block content %}{% endblock %}
+        </div>
     </div>
 
     <div
