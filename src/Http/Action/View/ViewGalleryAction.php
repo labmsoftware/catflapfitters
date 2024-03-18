@@ -29,7 +29,7 @@ final class ViewGalleryAction extends Action
                 '2024-01-05-8',
                 '2024-01-05-9',
                 'Brown',
-                'Clear-down',
+                'Clear-dog',
                 '2024-01-05-1',
                 'Brown-in-glass',
                 '2024-01-05-7'
